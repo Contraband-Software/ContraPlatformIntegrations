@@ -1,0 +1,20 @@
+{
+  "name": "software.contraband.unity.platformintegrations",
+  "version": "1.0.0",
+  "description": "A framework for various platform integrations, such as ads, in-app purchases and data privacy.",
+  "displayName": "CyanPlatformIntegrations",
+  "unity": "2019.4",
+  "type": "framework",
+  "hideInEditor": false,
+  "author": {
+    "name": "sammot",
+    "email": "sam@cyanseraph.net",
+    "url": "https://cyanseraph.net/"
+  },
+  "keywords": [
+    "ads",
+    "integration"
+  ],
+  "samples": [
+  ]
+}
