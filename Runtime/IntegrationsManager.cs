@@ -1,20 +1,30 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntegrationsManager : MonoBehaviour
+namespace PlatformIntegrations
 {
-    [Header("Integration Controllers")]
-    [SerializeField] AdvertisementsManager advertisementsManager;
-#if UNITY_ANALYTICS
-    [SerializeField] DataPrivacyHandler dataPrivacyHandler;
-    public DataPrivacyHandler GetDataPrivacy() { return dataPrivacyHandler; }
-#endif
-
-    public AdvertisementsManager GetAdvertisements() { return advertisementsManager; }
-
-    void Start()
+    public class IntegrationsManager : MonoBehaviour
     {
-        DontDestroyOnLoad(gameObject);
+        [Header("Integration Controllers")]
+
+        [SerializeField] AdvertisementsManager advertisementsManager;
+        public AdvertisementsManager GetAdvertisements() { return advertisementsManager; }
+
+//#if UNITY_ANALYTICS
+        [SerializeField] DataPrivacyHandler dataPrivacyHandler;
+        public DataPrivacyHandler GetDataPrivacy() { return dataPrivacyHandler; }
+//#endif
+
+        [Header("Platform Controllers")]
+
+        [SerializeField] SocialManager SocialManager;
+        public SocialManager GetGooglePlayGamesService() { return SocialManager; }
+
+
+        void Start()
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
