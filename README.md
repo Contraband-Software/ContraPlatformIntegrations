@@ -1,4 +1,4 @@
-# ContraPlatformItegrations, for Unity
+# ContraPlatformIntegrations, for Unity
  
 A singleton manager for Android and iOS platform integrations such as ads, data privacy and cloud saves (Android-only currently).
 
