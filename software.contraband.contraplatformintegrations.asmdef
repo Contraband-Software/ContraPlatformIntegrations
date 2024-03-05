@@ -1,5 +1,5 @@
 {
-    "name": "software.contraband.unity.platformintegrations.Runtime",
+    "name": "software.contraband.contraplatformintegrations.Runtime",
     "rootNamespace": "",
     "references": [
         "GUID:ff6de30450f3748908ff580f6ec64d9a",
